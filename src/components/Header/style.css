@@ -1,15 +1,9 @@
 .instructions {
-  width: 50vw;
-  display: inline-flex;
+  padding: 20px;
 }
 
-header {
-  width: 100%;
-  padding: 30px;
-  color: #43a047;
-}
-
-header h1 {
-  font-size: 2rem;
-  font-weight: bold;
+.instructions p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.2;
 }
