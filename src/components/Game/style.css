@@ -1,8 +1,7 @@
-section {
+.game {
   width: 50vw;
   height: 100vh;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
 }

@@ -1,7 +1,8 @@
 import React from "react";
+import "./style.css";
 
 const Game = () => (
-  <section>
+  <section className="game">
     <p>Game</p>
   </section>
 );
