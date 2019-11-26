@@ -1,0 +1,16 @@
+section {
+  width: 50vw;
+  display: inline-block;
+}
+
+header {
+  width: 100%;
+  padding: 30px;
+  color: #43a047;
+  box-sizing: border-box;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
