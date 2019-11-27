@@ -1,0 +1,20 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  margin: 2rem;
+  width: 50vw;
+  height: 91vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #dddddd;
+}
+
+.score {
+  align-self: flex-end;
+  margin-right: 4rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: #282a36;
+  background-color: unset;
+}
