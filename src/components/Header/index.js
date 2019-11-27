@@ -30,11 +30,21 @@ function Header() {
         <p>{question.description}</p>
       </div>
 
-      <pre>{question.code}</pre>
+      <div className="instructions">
+        <pre>{question.code}</pre>
+      </div>
 
-      <button className="nextbtn" onClick={() => loadQuestion()}>
-        Próximo desafio!
-      </button>
+      <div className="btns">
+        <button
+          className="btn resetbtn"
+          onClick={() => loadQuestion(idQuestion)}
+        >
+          Reset
+        </button>
+        <button className="btn nextbtn" onClick={() => loadQuestion()}>
+          Próximo desafio!
+        </button>
+      </div>
     </section>
   );
 }
