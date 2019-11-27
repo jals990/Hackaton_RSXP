@@ -1,23 +1,42 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css";
 
-const Header = () => (
-  <section className="sidebar">
-    <header>
-      <h1>Hackaton</h1>
-    </header>
+import api from "../../services/api";
 
-    <div className="instructions">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, fuga.
-        Omnis tempore mollitia, quam consequatur minima magni aut corrupti nisi
-        animi in a aspernatur blanditiis eveniet nemo earum. Autem, vitae.
-      </p>
-    </div>
+function Header() {
+  const [question, setQuestion] = useState({});
+  const [idQuestion, setidQuestion] = useState(1);
 
+  async function loadQuestion(numberQuestion = idQuestion) {
+    if (idQuestion > 3) return;
 
-    <button className="nextbtn">Próximo desafio!</button>
-  </section>
-);
+    const response = await api.get(`/questions/${numberQuestion}`);
+
+    setQuestion(response.data);
+    setidQuestion(numberQuestion + 1);
+  }
+
+  useEffect(() => {
+    loadQuestion();
+  }, []);
+
+  return (
+    <section className="sidebar">
+      <header>
+        <h1>{question.title}</h1>
+      </header>
+
+      <div className="instructions">
+        <p>{question.description}</p>
+      </div>
+
+      <pre>{question.code}</pre>
+
+      <button className="nextbtn" onClick={() => loadQuestion()}>
+        Próximo desafio!
+      </button>
+    </section>
+  );
+}
 
 export default Header;

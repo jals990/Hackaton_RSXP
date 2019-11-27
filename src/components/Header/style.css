@@ -1,5 +1,5 @@
 header {
-  width: 100%;
+  width: 50vw;
   color: #03dac5;
   margin-bottom: 3rem;
 }
@@ -28,7 +28,7 @@ header h1 {
   background: #ff0266;
   color: #fff;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   align-self: flex-end;
   cursor: pointer;
   transition: background 150ms linear;
@@ -39,5 +39,5 @@ header h1 {
 }
 
 .nextbtn:active {
-  transform: translate(0, .2rem);
+  transform: translate(0, 0.2rem);
 }
