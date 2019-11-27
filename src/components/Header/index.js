@@ -1,6 +1,8 @@
 import React from "react";
 import "./style.css";
 
+import api from "../../services/api";
+
 const Header = () => (
   <section className="sidebar">
     <header>
@@ -14,9 +16,10 @@ const Header = () => (
         animi in a aspernatur blanditiis eveniet nemo earum. Autem, vitae.
       </p>
     </div>
-
-
-    <button className="nextbtn">Próximo desafio!</button>
+    <div className="btns">
+      <button className="btn resetbtn">Reset</button>
+      <button className="btn nextbtn">Próximo desafio!</button>
+    </div>
   </section>
 );
 
