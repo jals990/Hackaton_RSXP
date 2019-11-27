@@ -1,0 +1,40 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "title": "Alterando a cor do elemento",
+      "description": "Para alterar a cor de um elemento, é necessário alterar sua propriedade 'background'",
+      "code": ["elemento {\n \t background: #7159C1;\n}"],
+      "correct": [
+        "#7159c1",
+        "#7159C1",
+        "#CE1332",
+        "#Ce1332",
+        "#cE1332",
+        "#ce1332"
+      ],
+      "score": 1
+    },
+    {
+      "id": 2,
+      "title": "Escondendo elemento",
+      "description": "Para esconder um elemento, é necessário alterar a propriedade...",
+      "code": ["elemento {\n\tbackground: #7159C1;\n\tdisplay: none;\n}"],
+      "correct": ["display: none;"],
+      "score": 50
+    },
+    {
+      "id": 3,
+      "title": "Utilizando uma condição",
+      "description": "Para utilizar uma condição, é necessário...",
+      "code": [
+        "if (mostrar === true) {\n\telement.classList.add('mystyle');\n}\n",
+        "\nif (mostrar) {\n\telement.classList.add('mystyle');\n}\n",
+        "\nif (mostrar === true) element.classList.add('mystyle');\n",
+        "\nmostrar && element.classList.add('mystyle');"
+      ],
+      "correct": ["if (mostrar === true) {"],
+      "score": 230
+    }
+  ]
+}
