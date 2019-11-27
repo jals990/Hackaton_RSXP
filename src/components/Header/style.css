@@ -1,9 +1,43 @@
+header {
+  width: 100%;
+  color: #03dac5;
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 .instructions {
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .instructions p {
   font-size: 16px;
-  color: #555;
+  color: #fff;
   line-height: 1.2;
+  font-family: Fira Code;
+}
+
+.nextbtn {
+  margin: 2rem;
+  width: 11rem;
+  height: 3rem;
+  font-size: 1rem;
+  background: #ff0266;
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  align-self: flex-end;
+  cursor: pointer;
+  transition: background 150ms linear;
+}
+
+.nextbtn:hover {
+  background: #ff217a;
+}
+
+.nextbtn:active {
+  transform: translate(0, .2rem);
 }

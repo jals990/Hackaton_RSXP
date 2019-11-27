@@ -1,28 +1,21 @@
 div {
   display: flex;
+  box-sizing: border-box;
+  background-color: #282a36;
 }
 
 .sidebar {
-  width: 50vw;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
 }
 
 header {
   width: 100%;
-  padding: 30px;
-  color: #43a047;
+  color: #03dac5;
 }
 
 header h1 {
   font-size: 2rem;
   font-weight: bold;
-}
-
-.game {
-  width: 50vw;
-  height: 100vh;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #dddddd;
 }

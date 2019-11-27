@@ -1,10 +1,11 @@
 import React from "react";
-import Svg from "./superheroe.svg";
+import Character from "../Character";
+import "./style.css";
 
 const Game = () => (
   <section className="game">
-    <p>Game</p>
-    <img src={ Svg } />
+    <div className="score">000000</div>
+    <Character />
   </section>
 );
 
