@@ -11,6 +11,8 @@ header h1 {
 
 .instructions {
   padding: 20px 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .instructions p {

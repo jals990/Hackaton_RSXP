@@ -1,6 +1,12 @@
 import React from "react";
 import "./style.css";
 
+// state
+
+// changeInputValue(text) {
+//   this.setState()
+// }
+
 const Header = () => (
   <section className="sidebar">
     <header>

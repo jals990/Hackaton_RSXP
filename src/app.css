@@ -9,13 +9,3 @@ div {
   flex-direction: column;
   padding: 2rem;
 }
-
-header {
-  width: 100%;
-  color: #03dac5;
-}
-
-header h1 {
-  font-size: 2rem;
-  font-weight: bold;
-}
